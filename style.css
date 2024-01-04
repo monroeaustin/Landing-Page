@@ -1,0 +1,64 @@
+/*Starting CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* The code above is a CSS Reset */
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    /* MIN HEIGHT ADDED SO THAT WE CAN APPLY FLEX GROW TO DISTRIBUTE EXTA SPACE */
+}
+/* The code above creates all the sections flex items which allows them to grow and absorb space as needed */
+
+header,ul{
+    display: flex;
+    /* This allows  us to align the header and its childs as intended */
+}
+li,a{
+    text-decoration: none;
+    list-style-type: none
+    /* removes the bullet points and underline texts; */
+}
+
+header{
+    justify-content: flex-end;
+    /* Aligns header to right */
+    margin-top: 10px;
+    min-width: 1000px;
+    /* max width added to achieve the extra margin look */
+
+}
+.headerlogo{
+    font-size: 24px;
+    color: #F9FAF8;
+    margin-right: auto;
+    /* This code pushes the element away from its links */
+}
+
+.section1,footer{
+    background-color: #1f2937;
+}
+h1{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+li,a{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+.section1,.section2,.section3,.section4{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* MADE A FLEX SO THAT WE CAN ALIGN HORZ */
+    align-items: center;
+}
+.section3{
+    background-color: #E5E7EB;
+}
