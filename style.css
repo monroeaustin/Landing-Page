@@ -172,6 +172,43 @@ img{
     align-items: flex-end;
 }
 
+.bluebox {
+    min-width: 1000px;
+    background-color: #3882F6;
+    display: flex;
+    border-radius: 10px;
+    min-height: 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.itemb1{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.itemp1{
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.signbtn{
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 4px 30px;
+    margin:auto;
+    color: white;
+    font-weight: 500;
+}
+.columblue1{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+}
 footer{
     min-height: 100px;
     display: flex;
