@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial';
 }
 /* The code above is a CSS Reset */
 
@@ -45,6 +45,7 @@ header{
     font-size: 24px;
     color: #F9FAF8;
     margin-right: auto;
+    font-weight: 700;
     /* This code pushes the element away from its links */
 }
 
@@ -67,6 +68,7 @@ li,a,p{
     /* MADE A FLEX SO THAT WE CAN ALIGN HORZ */
     align-items: center;
     min-width: 1000px;
+    justify-content: center;
 }
 .section3{
     background-color: #E5E7EB;
@@ -75,6 +77,8 @@ li,a,p{
 .row{
     display: flex;
     flex: 1;
+    flex-wrap: wrap;
+    gap: 35px;
 }
 .container{
     display: flex;
@@ -103,10 +107,75 @@ img{
  .cta-btn{
     background-color: #3882F6;
     color: white;
-    max-width:max-content;
-    padding: 14px 30px;
+    min-width:max-content;
+    padding: 8px 30px;
     border-radius: 10px;
+    width: 20px;
+    font-weight: 700;
  }
  h2{
-    margin-top: auto;
+    margin-bottom: 40px;
+    font-size: 36px;
  }
+ .flex-item{
+    height: 150px;
+    width: 150px;
+    background-color: transparent;
+    border: #3882F6 solid 4px;
+    border-radius: 12px;
+    flex: 0 1 auto;
+
+ }
+.row2{
+    display: flex;
+    justify-content: center;
+    gap: 24px
+    ;
+    
+}
+.infowrap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bottomtxt{display: flex;
+    max-width: 672px;
+    max-height: 150px;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+.ptext{
+    flex: 1 1 auto;
+    font-size: 14px;
+    max-width:150px;
+
+}
+.quote{
+    max-width: 672px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+.quotename{
+    text-align: right;
+    width: 672px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.section3cntr{
+    display: flex;
+    flex-direction: column;
+    min-width: 1000px;
+    flex: 0 1 auto;
+    align-items: flex-end;
+}
+
+footer{
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5E7EB;
+}
