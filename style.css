@@ -169,7 +169,7 @@ img{
     flex-direction: column;
     min-width: 1000px;
     flex: 0 1 auto;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .bluebox {
